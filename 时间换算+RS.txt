@@ -1,0 +1,89 @@
+package Demo1;
+
+import java.util.Scanner;
+
+public class demo2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method
+		Scanner in =  new Scanner(System.in);
+		int time=in.nextInt(); 
+		int hour=time/100;
+		int min=time%100;
+		if (hour<8)
+		{
+			hour=hour-8+24;
+		}
+		else
+			{
+				hour=hour-8;
+			}
+		if(min<10)
+		{
+			System.out.println(hour+":"+"0"+min);
+		}
+		else
+			{
+				System.out.println(hour+":"+min);
+			}
+		int R=in.nextInt();
+		int S=in.nextInt();
+		switch (R)
+		{
+		case 1:
+			System.out.println("Unreadable");
+		break;
+		case 2:
+			System.out.println("Barely readable, occasional words distinguishable");
+		break;
+		case 3:
+			System.out.println("Readable with considerable difficulty");
+		break;
+		case 4:
+			System.out.println("Readable with practically difficulty");
+		break;
+		case 5:
+			System.out.println("Perfectly readable");
+		break;
+			
+		}
+		switch (S)
+		{
+		case 1:
+			System.out.println("Faint signals barely perceptible");
+		break;
+		case 2:
+			System.out.println("Very weak signals");
+		break;
+		case 3:
+			System.out.println("Weak signals");
+		break;
+		case 4:
+			System.out.println("Fair signals");
+		break;
+		case 5:
+			System.out.println("Fairly good signals");
+		break;
+		case 6:
+			System.out.println("Good signals");
+		break;
+		case 7:
+			System.out.println("Moderately strong signals");
+		break;
+		case 8:
+			System.out.println("Strong signals");
+		break;
+		case 9:
+			System.out.println("Extremely strong signals");
+		break;
+		
+			
+		}
+	}
+	
+			
+			
+			
+			
+			
+}
